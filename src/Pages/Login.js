@@ -81,12 +81,12 @@ function Login() {
 
         <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+            <Form.Control type="email" placeholder="Enter email: (test1@gmail.com)" ref={emailRef} />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" ref={passwordRef}/>
+            <Form.Control type="password" placeholder="Password: (123456789)" ref={passwordRef}/>
         </Form.Group>
 
 
@@ -94,7 +94,7 @@ function Login() {
                 // <button  type="submit" onClick={SignInUser} className='signInbtnn'>
                 //     Sign In
                 // </button>  
-            <Button variant="primary" type="submit" onClick={loginUser}>
+            <Button variant="primary" type="submit" onClick={loginUser} style={{position: 'relative', bottom: '30px'}}>
             Login
             </Button>
             }
@@ -114,6 +114,7 @@ function Login() {
 
 
         </div>
+
 
 
     </div>
